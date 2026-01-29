@@ -1,0 +1,64 @@
+/* Theme variables - Paleta Profesional */
+:root {
+  /* Colores principales */
+  --primary-blue: #3B82F6;
+  --primary-purple: #8B5CF6;
+  --accent-pink: #EC4899;
+  
+  /* Colores neutrales */
+  --white: #FFFFFF;
+  --light-gray: #F8FAFC;
+  --gray: #CBD5E1;
+  --dark-gray: #475569;
+  --almost-black: #0F172A;
+  
+  /* Aliases para compatibilidad */
+  --primary: #3B82F6;
+  --primary-dark: #3B82F6;
+  --primary-light: #DBEAFE;
+  
+  /* Grays */
+  --gray-50: #F8FAFC;
+  --gray-100: #F1F5F9;
+  --gray-200: #E2E8F0;
+  --gray-300: #CBD5E1;
+  --gray-400: #94A3B8;
+  --gray-500: #64748B;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1E293B;
+  --gray-900: #0F172A;
+
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Utilidades adicionales */
+.text-gradient {
+  background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-blue-purple {
+  background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
+}
+
+.gradient-purple-pink {
+  background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+}
+
+.section-spacing {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (max-width: 768px) {
+  .section-spacing {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}

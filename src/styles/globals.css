@@ -1,0 +1,120 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #0f172a;
+  background-color: #ffffff;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.875rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #3b82f6;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: .7rem;
+}
+
+a:hover {
+  color: #8b5cf6;
+}
+
+hr {
+  color: #8b5cf6;
+  opacity: 0.9;
+  margin: 1rem 0;
+  box-shadow: 10px 0 5px rgba(139, 92, 246, 0.3);
+}
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+/* Custom styles  */
+#about {
+  background-color: #f9fafb;
+  padding: 2rem;
+}
+
+.span-text-shadow {
+    font-size: 1.5rem;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899, #3b82f6);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: brillo 15s linear infinite;
+  text-shadow: 0 0 8px rgba(139, 92, 246, 0.7);
+
+}
+
+.a-custom {
+    color: #f3f4f6;
+}
+
+.hero{
+    padding: 1rem;
+}
+
+.projects-custom {
+    padding: 1.5rem;
+}
+
+.services-custom {
+    padding: 1.5rem;
+}
+.padding-4 {
+    padding: .4rem;
+}
+@keyframes brillo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
